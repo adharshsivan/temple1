@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #0b0f1a;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.glass {
+  background: rgba(24, 20, 16, 0.58);
+  border: 1px solid rgba(255, 236, 200, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.28);
+}
+
+.chip {
+  transition: background 0.18s, color 0.18s, transform 0.12s, border-color 0.18s;
+}
+.chip:active {
+  transform: scale(0.96);
+}
